@@ -1,0 +1,34 @@
+{% extends "layout.html.twig" %}
+
+{% block body %}
+    <h1>Form styling</h1>
+
+    {% form_theme form "form_theme.html.twig" %}
+
+    <form method="post" action="./" enctype="multipart/form-data">
+
+        <h2>Text field</h2>
+        {{ form_row(form.text_field) }}
+
+        <h2>Number field</h2>
+        {{ form_row(form.number_field) }}
+
+        <h2>Select box</h2>
+        {{ form_row(form.select_field) }}
+
+        <h2>Radio field</h2>
+        {{ form_row(form.radio_field) }}
+
+        <h2>Multi-select field</h2>
+        {{ form_row(form.multi_select_field) }}
+
+        <h2>Checkbox field</h2>
+        {{ form_row(form.checkbox_field) }}
+
+        <hr />
+
+        <h2>Any remaining fields here (eg custom ones)</h2>
+
+        {{ form_rest(form) }}
+    </form>
+{% endblock %}
