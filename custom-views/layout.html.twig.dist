@@ -1,0 +1,9 @@
+{% extends "baseLayout.html.twig" %}
+
+{% block stylesheets %}
+    {# Add any stylesheets in here that you'd like to use, as normal <link /> tags #}
+{% endblock %}
+
+{% block javascripts %}
+    {# Add any javascript files in here that you'd like to use, as normal <script /> tags #}
+{% endblock %}
